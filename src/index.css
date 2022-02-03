@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Serif+4:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #E5B528;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto Condensed', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,3 +23,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style-type: none;
+}
+
+h1,h2 {
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin: .5rem 0;
+}
+
+.btn {
+  padding: .7rem 1.5rem;
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 25px;
+  font-size: 1.4rem;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: var(--primary-color)
+}
+
+@media screen and (max-width: 740px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+

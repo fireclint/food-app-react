@@ -1,0 +1,25 @@
+.food {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.food .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 740px) {
+    .food .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
